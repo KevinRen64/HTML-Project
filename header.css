@@ -1,0 +1,317 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: relative;
+}
+
+#nav-container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 3px 2.5% 0 2.5%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+#menu-toggler-icon, #menu-toggler, #c-menu {
+  display: none;
+}
+
+#logo {
+  width: 108px;
+  height: 42px;
+  padding-right: 6px;
+  margin-top: -2px;
+}
+
+#nav-left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.nav-left-item {
+  margin: 0 6px;
+}
+
+.nav-left-item, .nav-right-item {
+  height: 48px;
+  padding: 0 8.5px;
+}
+
+.nav-left-item, .nav-right-item, #logo {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.nav-left-item:hover > a, .nav-right-item:hover > span:first-child {
+  text-decoration: underline solid black 2px;
+}
+
+.nav-left-item:active, .nav-right-item:active, #logo:active {
+  outline: 2px dotted gray;
+}
+
+
+.nav-left-item, .nav-right-item {
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+#more i {
+  font-size: 13px;
+}
+
+#more:hover > a{
+  text-decoration: none;
+}
+
+#signin:hover > span {
+  text-decoration: none;
+}
+
+.nav-right-link {
+  margin-right: 5px;
+}
+
+header i {
+  font-size: 18px;
+}
+
+.bi-chevron-down {
+  position: relative;
+  top:5px;
+  margin: 0 2px;
+}
+
+#signin > span:first-child {
+  margin-right: 10px;
+}
+
+#icon-border {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #2d2d2d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+}
+
+#plus-sign {
+  position:absolute;
+  top: 8px;
+  left: 19px;
+}
+
+
+
+
+/*dropdown*/ 
+#all-ms-dropdown {
+  background-color: #f2f2f2;
+  max-width: 1230px;
+  font-size: 13px;
+  z-index: 999;
+  position: absolute;
+  right: 280px;
+  display: none;
+
+}
+
+#all-ms-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 50px;
+}
+
+.dropdown-col {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.dropdown-heading, .dropdown-item {
+  padding: 12px 0 12px 24px;
+  width: 170px;
+}
+
+.dropdown-heading {
+  font-weight: 600;
+}
+
+.dropdown-item:hover, #site-map:hover> :first-child {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dropdown-item:active {
+  outline: 1px dashed black;
+}
+
+
+#site-map {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 2px solid black;
+}
+
+#site-map i {
+  font-size: 13px;
+}
+
+/** responsive design  **/
+@media (max-width: 1400px) {
+  .nav-right-link{
+    display: none;
+  }
+}
+
+@media (max-width: 1084px) {
+  #small-business, #support {
+    display: none;
+  }
+
+  #more {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 960px) {
+  #sale {
+    display: none;
+  }
+}
+
+@media (max-width: 901px){
+  #xbox {
+    display:none
+  }
+}
+
+@media (max-width: 860px) {
+  #nav-left, #all-ms {
+    display: none;
+  }
+
+
+  #menu-toggler-icon {
+    display: block;
+    order: 0;
+    flex: 1;
+  }
+
+  #search {
+    order: 1;
+    flex: 1;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  #logo {
+    order: 2;
+    flex: 20;
+    justify-content: center;
+  }
+
+  #logo img {
+    width: 108px;
+
+  }
+
+  #cart {
+    order: 3;
+    flex: 1;
+  }
+
+  #signin {
+    order: 4;
+    flex: 1;
+  }
+
+  .bi-list {
+    font-size: 28px;
+  }
+
+  #menu-toggler:checked + #c-menu {
+    display: block;
+  }
+
+  #c-menu {
+    width: 100vw;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+  }
+
+  .c-menu-item {
+    padding: 15px 22px;
+    border-bottom: 1px solid #E6E6F7 ;
+    font-size: 15px;
+  }
+
+  .drop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* tagline*/
+#tagline-container {
+  background-color: rgb(0, 103, 184);
+  color: white;
+  font-weight: 600;
+  padding: 16px 24px;
+  cursor: pointer;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.tagline .dsb .text {
+  padding-right: 30px;
+}
+
+.tagline .dsb .symbol {
+  margin-left: -30px;
+}
+
+
+.tagline .dsb:hover .text{
+  text-decoration: underline;
+}
+
+.tagline .dsb:hover .symbol{
+  margin-left: -25px ;
+}
+
+/* search bar */
+#search-bar-container {
+  display: none;
+  width: 1463px;
+  margin-left: 20px;
+}
+
+#searchTerm {
+  width: 80%;
+}

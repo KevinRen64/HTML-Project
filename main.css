@@ -1,0 +1,202 @@
+/* icon */
+#upper-cards-container,
+#icon-container{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.icon img {
+  width: 40px;
+}
+
+#upper-cards-container {
+  margin-bottom: 40px;
+}
+
+
+#icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 24px;
+}
+
+
+.icon-title {
+  color: #0067b8;
+  font-weight: 600;
+  text-decoration: underline;
+}
+/* cards */
+
+
+.card {
+  border: none;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+
+.card-name {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.shop-link {
+  color: rgb(0, 103, 184);
+  font-weight: 600;;
+  display: inline;
+}
+
+.shop-link:hover span {
+  text-decoration: underline;
+}
+
+.shop-link:hover i {
+  margin-left: 5px;
+}
+
+#upper-cards-container {
+  margin-bottom: 80px;
+}
+
+/* xbox*/
+
+#xbox-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+
+#xbox-container .content {
+   position: absolute;
+   top: 30%;
+   left: 10%;
+   color: white;
+}
+
+#xbox-container .content h2 {
+  margin-bottom: 20px;
+} 
+
+#xbox-container .content p {
+  margin-bottom: 24px;
+} 
+
+#xbox-container .content a {
+  border-radius: 0.125rem;
+  font-weight: 600;
+  background-color: #0067b8;
+  border: 2px solid transparent;
+  padding: 8px 13px;
+  margin: 8px 0;
+} 
+
+.card-tagline {
+  font-size: 37px;
+}
+
+#xbox-container .hidden-content {
+  padding: 48px 0;
+  display: none;
+}
+
+
+@media(max-width:1083px) {
+  #xbox-container {
+    padding-bottom: 200px;
+    position:relative;
+  }
+
+  #xbox-container .content {
+    position: absolute;
+    left: 1%;
+    top: 65%;
+    background-color: white;
+    color: black;
+    width: 98%;
+    box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
+    padding: 48px;
+  }
+}
+
+@media(max-width: 859px) {
+  #xbox-container {
+    padding-bottom: 0;
+  }
+
+  #xbox-container .content {
+    display: none;
+  }
+
+  #xbox-container .hidden-content {
+    display: block;
+    
+  }
+}
+
+
+
+/* follow-container */
+
+#follow-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#follow-container img {
+  width: 32px;
+  height: 32px;
+  margin-top: -4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#follow-container p {
+  margin-right: 12px;
+  margin-bottom: 0px;
+}
+
+.back-to-top-container {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+
+/* go-top */
+.go-top {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  background-color: rgba(0,0,0,.15);
+  cursor: pointer;
+  border-radius: 0.125rem;
+
+
+}
+
+.go-top i {
+  margin-right: 10px;
+}
+
+.go-top:hover {
+  background-color: white;
+}
+

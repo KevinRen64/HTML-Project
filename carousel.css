@@ -1,0 +1,125 @@
+#carousel-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.caption {
+  width: 30%;
+  position: absolute;
+  top: 200px;
+  left: 10%;
+}
+
+.caption > h2 {
+  margin-bottom: 1.25rem;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.caption > p {
+  font-size: 1rem;
+  font-weight: 400px;
+  line-height: 1.5;
+}
+
+.caption > div {
+  margin-top: 1.5rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 136px;
+  padding: 10px 12px;
+  background-color: #0067B8;
+  color: white;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.125rem;
+}
+
+.arrow-link {
+  color: black;
+  font-weight: 600;
+}
+
+.arrow-link:hover span {
+  text-decoration: underline;
+  margin-right: 3px;
+  transition: margin-right 0.3s ease;
+}
+
+.arrow-link i {
+  font-size: 16px;
+}
+
+.button, .arrow-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -30px;
+  z-index: 998;
+}
+
+#playController, #prev, #next {
+  font-size: 18px;
+}
+
+#indicators > i {
+  font-size: 13px;
+  padding: 0 12px;
+}
+
+#prev, #next {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.bi-pause-circle, .bi-play-circle, .bi-chevron-left, .bi-chevron-right {
+  cursor: pointer;
+}
+
+.bi-chevron-left:hover {
+  padding-right: 3px;
+  margin-left: -3px;
+  transition: margin-left 0.5s ease;
+}
+
+.bi-chevron-right:hover {
+  padding-left: 3px;
+  margin-right: -3px;
+  transition: margin-right 0.5s ease;
+}
+
+@media (min-width: 1084px) {
+  #carousel-controls {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .caption {
+    width: 96%;
+    margin: 0 auto;
+    padding: 48px;
+    background-color: #fff;
+    position: relative;
+    top: -50px;
+    left: 0;
+    z-index: 997;
+    box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
+
+    .caption > h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
